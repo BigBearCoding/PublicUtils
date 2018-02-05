@@ -65,7 +65,7 @@ is logging an error, and if it is, the logger will perform an emergency shutdown
 <p align="center">
   <a href="https://discord.gg/pDCQw6d" class="fa-stack fa-lg"><img width="120" src="https://image.ibb.co/gLtoyx/Discord.png" alt="Discord" border="0"></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href=”https://join.skype.com/ve7Dqllutyge″ class="fa-stack fa-lg"><img width="120" src="https://image.ibb.co/fhtABH/Skype.png" alt="Skype" border="0"></a>
+  <a href=”https://join.skype.com/ve7Dqllutyge″><img width="120" src="https://image.ibb.co/fhtABH/Skype.png" alt="Skype" border="0"></a>
 </p>
 
 
