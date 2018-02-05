@@ -2,7 +2,6 @@ package PublicUtils;
 
 import PublicUtils.log.LogLevel;
 import PublicUtils.log.LogUtil;
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -24,19 +23,19 @@ import java.util.Set;
  * Thanks.
  * Created on 4/28/2014 at 12:17 AM.
  */
-public class Files {
+public class BukkitFile {
 
     private File folder;
     private File file;
     private YamlConfiguration config;
 
-    public Files(File folder, File file){
+    public BukkitFile(File folder, File file){
         this.folder = folder;
         this.file = file;
         this.config = YamlConfiguration.loadConfiguration(this.file);
     }
 
-    public Files(File folder, String fileName){
+    public BukkitFile(File folder, String fileName){
         this.folder = folder;
         this.file = new File(folder, fileName + ".yml");
         this.config = YamlConfiguration.loadConfiguration(this.file);

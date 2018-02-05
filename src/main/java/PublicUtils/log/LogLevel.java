@@ -13,7 +13,7 @@ import PublicUtils.SystemColor;
  */
 public enum LogLevel {
 
-    DEFAULT(0, SystemColor.SILVER, "default"), INFO(1, SystemColor.YELLOW, "info"), DEBUG(2, SystemColor.AQUAMARINE, "debug"),
+    DEFAULT(0, SystemColor.SILVER, "default"), INFO(1, SystemColor.LIME, "info"), DEBUG(2, SystemColor.AQUAMARINE, "debug"),
     WARN(3, SystemColor.GOLD, "warn"), ERROR(4, SystemColor.RED, "error"), TRACE(5, SystemColor.MAGENTA, "trace");
 
     private int id;
