@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="750" src="https://image.ibb.co/cUNLTx/Public_Utilities.png" alt="Public_Utilities" border="0">
+  <img width="750" src="https://image.ibb.co/nHgsrH/Public_Utilities2.png" alt="Public_Utilities" border="0">
   <br>
   <br>
 </h1>
@@ -56,7 +56,7 @@ is logging an error, and if it is, the logger will perform an emergency shutdown
 </p>
 
 <h3 align="center">
-  <img width="600" src="https://image.ibb.co/gBowJx/Website_Icon.png" alt="Visit my Website" border="0">
+  <a href="http://bit.ly/BigBearCoding" class="fa-stack fa-lg"><img width="600" src="https://image.ibb.co/gBowJx/Website_Icon.png" alt="Visit my Website" border="0"></a>
   <br>
   <br>
 </h3>
@@ -65,7 +65,7 @@ is logging an error, and if it is, the logger will perform an emergency shutdown
 <p align="center">
   <a href="https://discord.gg/pDCQw6d" class="fa-stack fa-lg"><img width="120" src="https://image.ibb.co/gLtoyx/Discord.png" alt="Discord" border="0"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="skype:live:bigbearcoding?chat" class="fa-stack fa-lg"><img width="120" src="https://image.ibb.co/fhtABH/Skype.png" alt="Skype" border="0"></a>
+  <a href=”https://join.skype.com/ve7Dqllutyge″ class="fa-stack fa-lg"><img width="120" src="https://image.ibb.co/fhtABH/Skype.png" alt="Skype" border="0"></a>
 </p>
 
 
