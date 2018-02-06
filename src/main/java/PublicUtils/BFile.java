@@ -23,19 +23,19 @@ import java.util.Set;
  * Thanks.
  * Created on 4/28/2014 at 12:17 AM.
  */
-public class BukkitFile {
+public class BFile {
 
     private File folder;
     private File file;
     private YamlConfiguration config;
 
-    public BukkitFile(File folder, File file){
+    public BFile(File folder, File file){
         this.folder = folder;
         this.file = file;
         this.config = YamlConfiguration.loadConfiguration(this.file);
     }
 
-    public BukkitFile(File folder, String fileName){
+    public BFile(File folder, String fileName){
         this.folder = folder;
         this.file = new File(folder, fileName + ".yml");
         this.config = YamlConfiguration.loadConfiguration(this.file);
