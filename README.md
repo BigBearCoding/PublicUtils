@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="750" src="https://image.ibb.co/nHgsrH/Public_Utilities2.png" alt="Public_Utilities" border="0">
+  <img width="750" src="https://image.ibb.co/mX6qGH/Public_Utlilies.png" alt="Public_Utilities" border="0">
   <br>
   <br>
 </h1>
@@ -31,7 +31,7 @@ color codes for use in the console.  This helps to identify errors and debugging
     - <em><strong>SystemColor.WHITE</strong></em> - Change the color of console text to 'bright white'. <sub>(255,255,255)</sub>
 
 ## Bukkit Files
-- [BukkitFile.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/BukkitFile.java) - BukkitFiles has always been my go to for easy file creation
+- [BFile.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/BFile.java) - BukkitFiles has always been my go to for easy file creation
 and management, this class allows the easy creation of files and folders, as well as easily edit existing files.
 
 ## Logger
@@ -45,6 +45,13 @@ is logging an error, and if it is, the logger will perform an emergency shutdown
     - <em><strong>LogLevel.WARN</strong></em> - Outputs in gold, used for critical issues, but will not perform an emergency shutdown.
     - <em><strong>LogLevel.ERROR</strong></em> - Outputs in red, used for project-breaking errors, performs an emergency shutdown upon logging.
     - <em><strong>LogLevel.TRACE</strong></em> - Outputs in magenta, best used in conjunction with debug, for minute details.
+
+## Official Updates
+- 1.0.0:
+    - Initial push
+- 1.0.2:
+    - Changed BukkitFile to [BFile](#bukkit-files) for no REAL reason, it just makes it easier on myself to import rather than my IDE trying to import Bukkit.java
+    - Added methods such as 'warn' and 'inform' to [LogUtil.java](#logger) to make tedious logging easier (such as excessive use of warning and what not)
 
 <h2 align="center">My Social Media Links</h2>
 <p align="center">

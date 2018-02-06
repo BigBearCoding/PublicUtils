@@ -33,4 +33,24 @@ public class LogUtil {
         }
     }
 
+    public static void inform(String msg){
+        log(LogLevel.INFO, msg);
+    }
+
+    public static void debug(String msg){
+        log(LogLevel.DEBUG, msg);
+    }
+
+    public static void warn(String msg){
+        log(LogLevel.WARN, msg);
+    }
+
+    public static void throwError(String msg){
+        log(LogLevel.ERROR, msg);
+    }
+
+    public static void trace(String msg){
+        log(LogLevel.TRACE, msg);
+    }
+
 }
