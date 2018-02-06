@@ -47,9 +47,9 @@ is logging an error, and if it is, the logger will perform an emergency shutdown
     - <em><strong>LogLevel.TRACE</strong></em> - Outputs in magenta, best used in conjunction with debug, for minute details.
 
 ## Official Updates
-- 1.0.0:
+- 1.0.0 (2/4/18):
     - Initial push
-- 1.0.2:
+- 1.0.2 (2/6/18):
     - Changed BukkitFile to [BFile](#bukkit-files) for no REAL reason, it just makes it easier on myself to import rather than my IDE trying to import Bukkit.java
     - Added methods such as 'warn' and 'inform' to [LogUtil.java](#logger) to make tedious logging easier (such as excessive use of warning and what not)
 
