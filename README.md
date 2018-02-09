@@ -66,6 +66,13 @@ the original KOTH a few years back!  This util is meant to mainly.... blah blah 
 - [MenuItem.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/MenuItem.java) - blah blah blah
 - [MenuCloseBehavior.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/MenuCloseBehavior.java) - blagh bklag bkag
 
+## Location Util
+- [LocationUtil.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/Menu.java) - Location util has 2 main purposes, getting Location to Strings and vice versa.  As well as checking if one location is withing another location
+
+## Time Parser
+- [TimeParser.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/Menu.java) - Time parser has a few uses.  Firstly to change Strings such as 1w:3d:18h:21m:42s to 930,102, and also to convert seconds to hours, minutes,
+and seconds, formatted of course.
+
 ## Official Updates
 - 1.0.0 (2/4/18):
     - Initial push
@@ -80,6 +87,8 @@ the original KOTH a few years back!  This util is meant to mainly.... blah blah 
     - Created lang system and placeholder system, its separate because the place holder system actually becomes useful in my future score board util, so I figured just make the class public and on its own for cleanliness
 - 1.3.0 (2/9/18):
     - Just moved Sky's Menu util into the here for KOTH work
+- 1.4.0 (2/9/18)
+    - Moved Time and Location utils into here
 
 <h2 align="center">My Social Media Links</h2>
 <p align="center">
