@@ -1,4 +1,4 @@
-package PublicUtils;
+package PublicUtils.log;
 
 /**
  * Created by BigBearCoding (c) 2015. All rights reserved.

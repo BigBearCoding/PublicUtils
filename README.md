@@ -5,12 +5,26 @@
 </h1>
 
 ## Utilities
-- [System Color](#system-color)
 - [Bukkit File System](#bukkit-files)
 - [Logging System](#logger)
 
-## System Color
-- [SystemColor.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/SystemColor.java) - SystemColor is an enumerator that contains strings for different
+## Bukkit Files
+- [SimpleFile.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/files/SimpleFile.java) - I changed a few things on the Bukkit Files system. One of the things
+I always wanted to have as a capability in my system was the have a commenting system.  I [found an old public system](https://bukkit.org/threads/tut-custom-yaml-configurations-with-comments.142592/)
+that had commenting abilities.  I tweaked quite a few things to fit my file system and I compressed it into one easy to use class.
+
+## Logger
+- [LogUtil.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/log/LogUtil.java) - LogUtil allows you to easily log information to the console,
+as well as it uses [SystemColor](#system-color) to automatically set the color (as well as reset it, which is one of the more useful capabilities).  It also checks if the program
+is logging an error, and if it is, the logger will perform an emergency shutdown (this helps with keeping the logs clear, so you can easily locate the error).
+- [LogLevel.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/log/LogLevel.java) - LogLevel is an enumerator that contains multiple different logging levels.
+    - <em><strong>LogLevel.DEFAULT</strong></em> - Outputs in silver, best used for unimportant logs.
+    - <em><strong>LogLevel.INFO</strong></em> - Outputs in lime, best used for logs that are important, but not critical.
+    - <em><strong>LogLevel.DEBUG</strong></em> - Outputs in aquamarine, used for debugging code.
+    - <em><strong>LogLevel.WARN</strong></em> - Outputs in gold, used for critical issues, but will not perform an emergency shutdown.
+    - <em><strong>LogLevel.ERROR</strong></em> - Outputs in red, used for project-breaking errors, performs an emergency shutdown upon logging.
+    - <em><strong>LogLevel.TRACE</strong></em> - Outputs in magenta, best used in conjunction with debug, for minute details.
+- [SystemColor.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/log/SystemColor.java) - SystemColor is an enumerator that contains strings for different
 color codes for use in the console.  This helps to identify errors and debugging messages.
     - <em><strong>SystemColor.RESET</strong></em> - Reset the console back to its original color.
     - <em><strong>SystemColor.BLACK</strong></em> - Change the color of console chat to 'black'. <sub>(0,0,0)</sub>
@@ -30,28 +44,15 @@ color codes for use in the console.  This helps to identify errors and debugging
     - <em><strong>SystemColor.SILVER</strong></em> - Change the color of console chat to 'white'. <sub>(192,192,192)</sub>
     - <em><strong>SystemColor.WHITE</strong></em> - Change the color of console text to 'bright white'. <sub>(255,255,255)</sub>
 
-## Bukkit Files
-- [BFile.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/BFile.java) - BukkitFiles has always been my go to for easy file creation
-and management, this class allows the easy creation of files and folders, as well as easily edit existing files.
-
-## Logger
-- [LogUtil.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/log/LogUtil.java) - LogUtil allows you to easily log information to the console,
-as well as it uses [SystemColor](#system-color) to automatically set the color (as well as reset it, which is one of the more useful capabilities).  It also checks if the program
-is logging an error, and if it is, the logger will perform an emergency shutdown (this helps with keeping the logs clear, so you can easily locate the error).
-- [LogLevel.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/log/LogLevel.java) - LogLevel is an enumerator that contains multiple different logging levels.
-    - <em><strong>LogLevel.DEFAULT</strong></em> - Outputs in silver, best used for unimportant logs.
-    - <em><strong>LogLevel.INFO</strong></em> - Outputs in lime, best used for logs that are important, but not critical.
-    - <em><strong>LogLevel.DEBUG</strong></em> - Outputs in aquamarine, used for debugging code.
-    - <em><strong>LogLevel.WARN</strong></em> - Outputs in gold, used for critical issues, but will not perform an emergency shutdown.
-    - <em><strong>LogLevel.ERROR</strong></em> - Outputs in red, used for project-breaking errors, performs an emergency shutdown upon logging.
-    - <em><strong>LogLevel.TRACE</strong></em> - Outputs in magenta, best used in conjunction with debug, for minute details.
-
 ## Official Updates
 - 1.0.0 (2/4/18):
     - Initial push
 - 1.0.2 (2/6/18):
     - Changed BukkitFile to [BFile](#bukkit-files) for no REAL reason, it just makes it easier on myself to import rather than my IDE trying to import Bukkit.java
     - Added methods such as 'warn' and 'inform' to [LogUtil.java](#logger) to make tedious logging easier (such as excessive use of warning and what not)
+-1.1.0 (2/8/18):
+    - Made it so my filing system has the ability to add comments and headers.
+    - Merged [SystemColor and LogUtil](#logger)
 
 <h2 align="center">My Social Media Links</h2>
 <p align="center">

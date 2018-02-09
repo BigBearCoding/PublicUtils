@@ -1,7 +1,5 @@
 package PublicUtils.log;
 
-import PublicUtils.SystemColor;
-
 /**
  * Created by BigBearCoding (c) 2018. All rights reserved.
  * Any code contained within PublicUtils (this document), and any associated APIs with similar branding
@@ -13,7 +11,7 @@ import PublicUtils.SystemColor;
  */
 public enum LogLevel {
 
-    DEFAULT(0, SystemColor.SILVER, "default"), INFO(1, SystemColor.LIME, "info"), DEBUG(2, SystemColor.AQUAMARINE, "debug"),
+    DEFAULT(0, SystemColor.SILVER, "default"), INFO(1, SystemColor.ROYAL, "info"), DEBUG(2, SystemColor.AQUAMARINE, "debug"),
     WARN(3, SystemColor.GOLD, "warn"), ERROR(4, SystemColor.RED, "error"), TRACE(5, SystemColor.MAGENTA, "trace");
 
     private int id;

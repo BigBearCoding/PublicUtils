@@ -1,6 +1,5 @@
 package PublicUtils.log;
 
-import PublicUtils.SystemColor;
 import org.bukkit.Bukkit;
 
 /**
@@ -14,6 +13,8 @@ import org.bukkit.Bukkit;
  */
 public class LogUtil {
 
+    private String CONSOLE_PREFIX = SystemColor.GREEN + "[" + SystemColor.LIME + "PublicUtils" + SystemColor.GREEN + "]" + SystemColor.RESET;
+
     public static void log(String msg){
         log(LogLevel.DEFAULT, msg);
     }
@@ -25,7 +26,11 @@ public class LogUtil {
     }
 
     public static void log(LogLevel level, String msg){
-        if(level == LogLevel.ERROR){
+        log(level, msg, false);
+    }
+
+    public static void log(LogLevel level, String msg, boolean shutdownOnError){
+        if(level == LogLevel.ERROR && shutdownOnError){
             System.out.println(level.getPrintColor() + msg + SystemColor.RESET);
             Bukkit.getServer().shutdown();
         }else{
@@ -45,7 +50,7 @@ public class LogUtil {
         log(LogLevel.WARN, msg);
     }
 
-    public static void throwError(String msg){
+    public static void throwError(String msg, boolean shutdown){
         log(LogLevel.ERROR, msg);
     }
 
