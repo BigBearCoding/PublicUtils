@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="750" src="https://image.ibb.co/mX6qGH/Public_Utlilies.png" alt="Public_Utilities" border="0">
+  <img width="750" src="https://image.ibb.co/igUUYx/Public_Utlilies.png" alt="Public_Utilities" border="0">
   <br>
   <br>
 </h1>
@@ -7,6 +7,7 @@
 ## Utilities
 - [Bukkit File System](#bukkit-files)
 - [Logging System](#logger)
+- [ChatUtil](#chat-util)
 
 ## Bukkit Files
 - [SimpleFile.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/files/SimpleFile.java) - I changed a few things on the Bukkit Files system. One of the things
@@ -44,15 +45,31 @@ color codes for use in the console.  This helps to identify errors and debugging
     - <em><strong>SystemColor.SILVER</strong></em> - Change the color of console chat to 'white'. <sub>(192,192,192)</sub>
     - <em><strong>SystemColor.WHITE</strong></em> - Change the color of console text to 'bright white'. <sub>(255,255,255)</sub>
 
+## Chat Util
+- [ChatUtil.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/chat/ChatUtil.java) - ChatUtil is made just to make sending messages a tiny bit easier,
+not much to it other than allowing you to send messages and not have to worry about color code correction etc
+- [Lang.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/chat/Lang.java) - Instead of trying to explain this let me just write out an example. Say
+you are trying to make an 'arena created' message, you would want your object to look something like this...
+<strong>ARENA_CREATED</strong>(<em>"arena-create"</em> [this is the file path that the text is saved to], <em>"You successfully created arena: $arena"</em> [this is the default
+message that is sent if another isn't found.], <em>PlaceholderText.ARENA</em> [your placeholder object]);
+- [PlaceholderText.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/chat/PlaceholderText.java) - Going off of the same example from above,
+inside your PlaceholderText class you would want...
+<strong>ARENA</strong>(<em>"$arena"</em> [this is what will be replaced inside your messages, <em>"Replaces with your arenas name"</em> [this is what the description will be in your file]);
+With both of those made, to create a string for message sending simply call, Lang.ARENA_CREATED.replace(new String[]{}, new String[]{}) the arrays can be as long as you like and will search
+and replace the equivalent. (So if you have 4 in each, the 4th placeholder will be replaced with the 4th string to replace it with)
+
 ## Official Updates
 - 1.0.0 (2/4/18):
     - Initial push
 - 1.0.2 (2/6/18):
     - Changed BukkitFile to [BFile](#bukkit-files) for no REAL reason, it just makes it easier on myself to import rather than my IDE trying to import Bukkit.java
     - Added methods such as 'warn' and 'inform' to [LogUtil.java](#logger) to make tedious logging easier (such as excessive use of warning and what not)
--1.1.0 (2/8/18):
+- 1.1.0 (2/8/18):
     - Made it so my filing system has the ability to add comments and headers.
     - Merged [SystemColor and LogUtil](#logger)
+- 1.2.0
+    - Created a chat util
+    - Created lang system and placeholder system, its confusing yes, but I tried my best to explain how it works and why they are 2 separate classes when I usually keep them as one :P message me with issues.
 
 <h2 align="center">My Social Media Links</h2>
 <p align="center">
