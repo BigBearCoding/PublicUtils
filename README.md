@@ -8,6 +8,7 @@
 - [Bukkit File System](#bukkit-files)
 - [Logging System](#logger)
 - [ChatUtil](#chat-util)
+- [Menu System](#menu-builder)
 
 ## Bukkit Files
 - [SimpleFile.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/files/SimpleFile.java) - I changed a few things on the Bukkit Files system. One of the things
@@ -58,6 +59,13 @@ inside your PlaceholderText class you would want...
 With both of those made, to create a string for message sending simply call, Lang.ARENA_CREATED.replace(new String[]{}, new String[]{}) the arrays can be as long as you like and will search
 and replace the equivalent. (So if you have 4 in each, the 4th placeholder will be replaced with the 4th string to replace it with)
 
+## Menu Builder
+- [Menu.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/Menu.java) - This menu builder was something a good friend of mine [Sky](https://twitter.com/sky8the2flies) made pretty much totally on his own while we made
+the original KOTH a few years back!  This util is meant to mainly.... blah blah blah, I'll do this later... tbh nobody is probably gonna see this anyways :D
+- [MenuAPI.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/MenuAPI.java) - bklah blah blah
+- [MenuItem.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/MenuItem.java) - blah blah blah
+- [MenuCloseBehavior.java](https://github.com/BigBearCoding/PublicUtils/blob/master/src/main/java/PublicUtils/menu/MenuCloseBehavior.java) - blagh bklag bkag
+
 ## Official Updates
 - 1.0.0 (2/4/18):
     - Initial push
@@ -67,9 +75,11 @@ and replace the equivalent. (So if you have 4 in each, the 4th placeholder will 
 - 1.1.0 (2/8/18):
     - Made it so my filing system has the ability to add comments and headers.
     - Merged [SystemColor and LogUtil](#logger)
-- 1.2.0
+- 1.2.0 (2/9/18):
     - Created a chat util
-    - Created lang system and placeholder system, its confusing yes, but I tried my best to explain how it works and why they are 2 separate classes when I usually keep them as one :P message me with issues.
+    - Created lang system and placeholder system, its separate because the place holder system actually becomes useful in my future score board util, so I figured just make the class public and on its own for cleanliness
+- 1.3.0 (2/9/18):
+    - Just moved Sky's Menu util into the here for KOTH work
 
 <h2 align="center">My Social Media Links</h2>
 <p align="center">
